@@ -1,0 +1,38 @@
+.blogPage {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  .article {
+    background-color: #161925;
+    width: 100%;
+    padding: 1rem;
+    overflow: hidden;
+    .article-content {
+      overflow: hidden;
+      padding-bottom: 2rem;
+      img {
+        width: 100%;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+          transform: scale(1.2);
+        }
+        padding-bottom: 2rem;
+      }
+      .article-link {
+        color: inherit;
+        font-family: inherit;
+        text-decoration: none;
+        font-size: 1rem;
+        margin-top: 2rem;
+        padding-bottom: 1rem;
+        transition: all 0.4s ease-in-out;
+        &:hover {
+          color: #037fff;
+        }
+      }
+    }
+  }
+}
+.b-title {
+  margin-bottom: 4rem;
+}
