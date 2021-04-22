@@ -1,5 +1,5 @@
 import React from 'react'
-import avatar from '../img/avatar.png'
+import avatar from '../img/Download.jpg'
 import {NavLink} from 'react-router-dom'
 
 function Navbar() {
@@ -8,8 +8,6 @@ function Navbar() {
             <nav className="nav">
               <div className="profile">
                 <img src={avatar} alt=""></img>
-                Plamen Penchev
-
               </div>     
                 <ul className="nav-items">
                     <li className="nav-item">
@@ -40,7 +38,7 @@ function Navbar() {
                 </ul>
                 <footer className="footer">
                      <p>
-                        @2021 something something licence
+                        @2021
                      </p>
                 </footer>
             </nav>
