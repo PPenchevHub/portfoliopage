@@ -28,9 +28,24 @@
     margin-left: 16%;
     background-color: #10121b;
     min-height: 100vh;
-    background-image: url(../img/dots.svg);
+    //  background-image: url(../img/dots.svg);
     display: grid;
     position: relative;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
     .content {
       margin: 5rem 10rem;
       @media screen and(max-width: 1100px) {

@@ -1,5 +1,5 @@
 .serviceSection {
-  margin-top: 4rem;
+  margin-top: 2.5rem;
   .service {
     width: 95%;
     background-color: #191d2b;
@@ -8,11 +8,14 @@
     border-bottom: 1px solid #2e344e;
     border-top: 8px solid #2e344e;
     transition: all 0.4s ease-in-out;
+
     &:hover {
       border-top: 8px solid #037fff;
     }
     .service-content {
       padding: 1rem;
+      display: flex;
+
       .s-title {
         font-size: 1.4rem;
         font-weight: 500;
@@ -24,7 +27,7 @@
           position: absolute;
           bottom: 0;
           left: 0;
-          width: 30%;
+          width: 100%;
           height: 1px;
           background-color: #2e344e;
         }
@@ -36,11 +39,18 @@
 .service-container {
   display: flex;
   justify-content: space-between;
-  margin-top: 4rem;
+  margin-top: 1rem;
   @media screen and(max-width: 1400px) {
     flex-direction: column;
     &:not(:last-child) {
       margin-bottom: 2rem;
     }
+  }
+  .s-text {
+    display: flex;
+    padding-left: 5rem;
+    justify-content: center;
+    text-align: center;
+    margin-top: 1.5rem;
   }
 }
